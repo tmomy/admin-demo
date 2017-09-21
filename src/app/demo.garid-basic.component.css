@@ -1,0 +1,40 @@
+.logo {
+margin-top: -10px;
+}
+#logo {
+  float: left;
+  height: 80px;
+}
+#logo img {
+  height: 64px;
+  width: 64px;
+  margin: auto 10px;
+}
+#logo span {
+  float: right;
+  font-size: 20px;
+  font-family: Raleway,Hiragino Sans GB,sans-serif;
+  height: 80px;
+  color: #108ee9;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.ant-menu-inline .ant-menu-submenu-title {
+  font-size: 24px;
+  line-height: 60px;
+  height: 60px;
+}
+
+:host ::ng-deep .ant-layout-sider-collapsed .nav-text {
+  display: none;
+}
+
+:host ::ng-deep .ant-layout-sider-collapsed .ant-menu-submenu-title:after {
+  display: none;
+}
+
+:host ::ng-deep .ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+  margin-left: 8px;
+}

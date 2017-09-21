@@ -1,0 +1,46 @@
+<nz-layout style="height: 100%;">
+    <!--<nz-layout style="height: 80%">-->
+  <nz-layout>
+    <nz-header style="background: #fff; padding:24px; height: 96px">
+      <div class="logo">
+        <a href="" id="logo"><img src="https://ng.ant.design/assets/img/zorro.svg" alt="logo">
+          <span>NG-ZORRO</span>
+        </a>
+      </div>
+    </nz-header>
+  </nz-layout>
+  <nz-layout style="height: 100%">
+      <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
+        <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
+          <li nz-submenu>
+            <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
+            <ul>
+              <li nz-menu-item>Tom</li>
+              <li nz-menu-item>Bill</li>
+              <li nz-menu-item>Alex</li>
+            </ul>
+          </li>
+          <li nz-submenu>
+            <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
+            <ul>
+              <li nz-menu-item>Team 1</li>
+              <li nz-menu-item>Team 2</li>
+            </ul>
+          </li>
+          <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span></li>
+        </ul>
+      </nz-sider>
+      <nz-layout style="height: auto;">
+        <nz-content style="margin:0 16px;">
+          <nz-breadcrumb style="margin:12px 0;">
+            <nz-breadcrumb-item>User</nz-breadcrumb-item>
+            <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
+          </nz-breadcrumb>
+          <div style="height: 750px;margin: 20px; background: #fff;">
+            Bill is a cat.
+          </div>
+        </nz-content>
+        <nz-footer style="text-align: center; height: 80px; background: #d46d60">Ant Design ©2017 Implement By Angular</nz-footer>
+      </nz-layout>
+  </nz-layout>
+</nz-layout>
