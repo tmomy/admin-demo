@@ -19,11 +19,8 @@ margin-top: -10px;
   margin: auto;
   text-transform: uppercase;
 }
-
-.ant-menu-inline .ant-menu-submenu-title {
-  font-size: 24px;
-  line-height: 60px;
-  height: 60px;
+.nav-sumenu, .nav-menu-item li {
+  margin: 10px 0;
 }
 
 :host ::ng-deep .ant-layout-sider-collapsed .nav-text {
@@ -35,6 +32,8 @@ margin-top: -10px;
 }
 
 :host ::ng-deep .ant-layout-sider-collapsed .anticon {
-  font-size: 16px;
+  font-size: 24px;
   margin-left: 8px;
 }
+
+

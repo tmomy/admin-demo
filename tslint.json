@@ -17,7 +17,7 @@
       true,
       "rxjs"
     ],
-    "import-spacing": true,
+    "import-spacing": false,
     "indent": [
       true,
       "spaces"
@@ -123,7 +123,7 @@
     "component-selector": [
       true,
       "element",
-      ["app", "nz"],
+      ["app", "nz", "admin"],
       "kebab-case"
     ],
     "use-input-property-decorator": true,

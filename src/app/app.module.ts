@@ -4,21 +4,25 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { AppRoutingModule }     from './app-routing.module';
+import { PurviewModule } from './admin.purview.components/purview.module';
 
 import { AppComponent } from './app.component';
-import { DemoGaridBasicComponent} from './demo.garid-basic.component';
+import { NzAdminLayoutComponent} from './nz.admin.layout/nz.admin.layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoGaridBasicComponent
+    NzAdminLayoutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule.forRoot()
+    NgZorroAntdModule.forRoot(),
+    PurviewModule,
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
 })
